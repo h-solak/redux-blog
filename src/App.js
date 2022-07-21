@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import Counter from "./features/counter/Counter";
+import React from "react";
+import {
+  InputGroup,
+  Input,
+  Label,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Row,
+  Col,
+  Badge,
+} from "reactstrap";
+
+import PostsList from "./features/post/PostsList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row className="w-100 p-5 d-flex justify-content-center">
+      {/* <Counter /> */}
+      <PostsList />
+    </Row>
   );
 }
 
